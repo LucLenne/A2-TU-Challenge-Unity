@@ -13,6 +13,20 @@ namespace TU_Challenge.Heritage
             Name = name;
             IsAlive = true;
             Pattes = 4;
+            Feed = false;
+        }
+
+        public override string Crier()
+        {
+            if (Feed == false)
+            {
+                return "Ouaf (j'ai faim)";
+            }
+            else
+            {
+                return "Ouaf (viens on joue ?)";
+            }
+            
         }
     }
 }

@@ -10,15 +10,19 @@ namespace TU_Challenge.Heritage
 
         public bool IsAlive { get; set; }
         public int Pattes { get; set; }
+        public bool Feed { get; set; }
+
+        public bool FeedFish { get; set; }
         public string Name { get; set; }
 
-        public bool Crier()
+        public virtual string Crier()
         {
             throw new NotImplementedException();
         }
         public void Die()
         {
-            throw new NotImplementedException();
+            IsAlive = false;
+            OnDie.Invoke();
         }
     }
 }

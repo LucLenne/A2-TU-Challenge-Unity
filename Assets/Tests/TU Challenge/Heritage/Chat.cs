@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,8 +14,27 @@ namespace TU_Challenge.Heritage
         public Chat(string v)
         {
             Name = v;
-            IsAlive= true;
+            IsAlive = true;
             Pattes = 4;
+            Feed = false;
+            FeedFish = false;
+
+        }
+        public override string Crier()
+        {
+            if(Feed==false)
+            {
+                return "Miaou (j'ai faim)";
+            }
+            else if(FeedFish == true)
+            {
+                return "Miaou (Le poisson etait bon)";
+            }
+            else 
+            {
+                return "Miaou (c'est bon laisse moi tranquille humain)";
+            }
+            
         }
     }
 }

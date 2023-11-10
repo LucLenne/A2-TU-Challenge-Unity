@@ -6,13 +6,11 @@ using System.Threading.Tasks;
 
 namespace TU_Challenge.Heritage
 {
-    public class ChatQuiBoite : Animal
+    public class ChatQuiBoite : Chat
     {
-        public ChatQuiBoite(string v)
+        public ChatQuiBoite(string v) : base (v)
         {
-            Chat chat = new Chat(v);
-            Name = v;
-            IsAlive = true;
+            Name= v;
             Pattes = 3;
         }
     }

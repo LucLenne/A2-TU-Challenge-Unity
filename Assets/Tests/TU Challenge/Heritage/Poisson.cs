@@ -10,7 +10,7 @@ namespace TU_Challenge.Heritage
     {
         public Poisson(string name) 
         {
-            Name = name;
+            Name = name + " le poisson";
             IsAlive = true;
             Pattes = 0;
         }

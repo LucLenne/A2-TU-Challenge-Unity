@@ -9,8 +9,8 @@ namespace TU_Challenge.Heritage
         public event Action OnDie;
 
         public bool IsAlive { get; set; }
-        public bool Pattes { get; set; }
-        public bool Name { get; set; }
+        public int Pattes { get; set; }
+        public string Name { get; set; }
 
         public bool Crier()
         {

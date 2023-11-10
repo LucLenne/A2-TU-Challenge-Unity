@@ -24,17 +24,24 @@ namespace TU_Challenge.Heritage
 
         public void AddAnimal(Animal c)
         {
-            throw new NotImplementedException();
+            _zoo.Add(c);
         }
 
         public bool Contains(Animal a)
         {
-            throw new NotImplementedException();
+            for(int i = 0; i < _zoo.Count ; i++)
+            {
+                if (_zoo[i] == a)
+                {
+                    return true;
+                }
+            }
+            return false;
         }
 
         public Animal GetAnimal(int index)
         {
-            throw new NotImplementedException();
+            return _zoo[index];
         }
 
         public void FeedAll()

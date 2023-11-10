@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 
 namespace TU_Challenge.Heritage
 {
-    public class Poisson 
+    public class Poisson : Animal
     {
         public Poisson(string name) 
         {
+            Name = name;
+            IsAlive = true;
+            Pattes = 0;
         }
-
-       
     }
 }

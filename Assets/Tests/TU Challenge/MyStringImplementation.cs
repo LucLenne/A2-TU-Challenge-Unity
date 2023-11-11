@@ -120,6 +120,16 @@ namespace TU_Challenge
             return a.ToLower();
         }
 
+        internal static string Reverse(string a)
+        {
+            string reverse = "";
+            for(int i = a.Length-1; i >=0 ;i--)
+            {
+                reverse += a[i];
+            }
+            return reverse;
+        }
+
         internal static string UnBazardString(string input)
         {
             int length = input.Length;

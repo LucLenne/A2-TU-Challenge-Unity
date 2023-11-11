@@ -10,7 +10,6 @@ namespace TU_Challenge.Heritage
 {
     public class Chat : Animal
     {
-
         public Chat(string v)
         {
             Name = v;
@@ -22,7 +21,7 @@ namespace TU_Challenge.Heritage
         }
         public override string Crier()
         {
-            if(Feed==false)
+            if(Feed == false)
             {
                 return "Miaou (j'ai faim)";
             }

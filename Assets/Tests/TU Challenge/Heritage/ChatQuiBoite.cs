@@ -10,7 +10,7 @@ namespace TU_Challenge.Heritage
     {
         public ChatQuiBoite(string v) : base (v)
         {
-            Name= v;
+            Name = v;
             Pattes = 3;
         }
     }

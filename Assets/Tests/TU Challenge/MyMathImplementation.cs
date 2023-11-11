@@ -133,7 +133,7 @@ namespace TU_Challenge
 
         internal static bool IsMajeur(int age)
         {
-            if(age < 0 || age > 150) 
+            if(age < 0 || age >= 150) 
             {
                 throw new ArgumentException();
             }

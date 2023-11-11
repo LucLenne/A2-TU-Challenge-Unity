@@ -3,7 +3,7 @@
 namespace TU_Challenge.Heritage
 {
 
-    public class Animal
+    public class Animal 
     {
 
         public event Action OnDie;
@@ -22,7 +22,7 @@ namespace TU_Challenge.Heritage
         public void Die()
         {
             IsAlive = false;
-            OnDie.Invoke();
+            OnDie?.Invoke();
         }
     }
 }
